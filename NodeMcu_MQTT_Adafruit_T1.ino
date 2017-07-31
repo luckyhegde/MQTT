@@ -15,12 +15,12 @@
 #include "Adafruit_MQTT_Client.h"
 //for LED status
 #include <Ticker.h>
-#define WLAN_SSID       "lucky"
-#define WLAN_PASS    "laxmish53"
+#define WLAN_SSID       "your_SSID"
+#define WLAN_PASS    "Your_Pass"
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT 8883 // 8883 for MQTTS
-#define AIO_USERNAME   "luckyhegde"
-#define AIO_KEY          "b518ecfbe32f422aad8e1f2c0f795175"
+#define AIO_USERNAME   "username"
+#define AIO_KEY          "AIO_KEY"
 // WiFiFlientSecure for SSL/TLS support
 WiFiClientSecure client;
 
@@ -46,8 +46,8 @@ Ticker ticker;
 // How many NeoPixels are attached to the Arduino?
 #define NUMPIXELS      9
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
-const char* ssid = "lucky";
-const char* password = "laxmish53";
+const char* ssid = "your_SSID";
+const char* password = "your_PASS";
 
 #define OLED_RESET LED_BUILTIN
 Adafruit_SSD1306 display(OLED_RESET);
